@@ -39,9 +39,7 @@ class Adapter : RecyclerView.Adapter <Adapter.ViewHolder> (){
             binding.textView.text = zapato.nombre
             binding.textView2.text = zapato.precio.toString()
             binding.imageView.load(zapato.imgUrl)
-            binding.cardView.setOnClickListener(View.OnClickListener {
-                callback?.showZapato(texto)
-            })
+
         }
 
     }
